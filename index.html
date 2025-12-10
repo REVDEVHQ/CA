@@ -349,6 +349,14 @@
             letter-spacing: 1px;
         }
         
+        .template-preview-iframe {
+            height: 280px;
+            background: #ffffff;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
         .template-info {
             padding: 25px;
         }
@@ -373,6 +381,41 @@
             border-radius: 6px;
             font-size: 13px;
             font-weight: 700;
+        }
+        
+        .btn-template-preview,
+        .btn-template-use {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .btn-template-preview {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-template-preview:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-template-use {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border: none;
+        }
+        
+        .btn-template-use:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 59, 48, 0.3);
         }
         
         /* Pricing Section */
@@ -717,9 +760,9 @@
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Simple Dashboard</h3>
-                <p>Edit everything yourself. No waiting for developers. No monthly maintenance fees. You're in control.</p>
+                <div class="feature-icon">🛠️</div>
+                <h3>Quick Fixes from Dev Team</h3>
+                <p>Need a tweak or urgent fix? Our dev team responds fast with updates, bug fixes, and customizations included.</p>
             </div>
         </div>
     </section>
@@ -732,29 +775,47 @@
         
         <div class="templates-grid">
             <div class="template-card">
-                <div class="template-preview">TEMPLATE PREVIEW</div>
+                <div class="template-preview-iframe">
+                    <iframe src="template-painting-embed.html" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
                 <div class="template-info">
-                    <h3>The Builder V1</h3>
+                    <h3>The Builder V1 - Painting</h3>
                     <p>Perfect for painters, remodelers, and general contractors</p>
                     <span class="template-badge">Most Popular</span>
+                    <div style="margin-top: 15px; display: flex; gap: 10px;">
+                        <a href="template-painting.html" target="_blank" class="btn-template-preview">Full Preview</a>
+                        <a href="https://buy.stripe.com/dRm9AT9oXfZVfeR7Qq9bO0B" class="btn-template-use">Use Template</a>
+                    </div>
                 </div>
             </div>
             
             <div class="template-card">
-                <div class="template-preview">TEMPLATE PREVIEW</div>
+                <div class="template-preview-iframe">
+                    <iframe src="template-remodeling-embed.html" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
                 <div class="template-info">
-                    <h3>The Pro</h3>
+                    <h3>The Pro - Remodeling</h3>
                     <p>Premium design for high-end contractors and luxury services</p>
                     <span class="template-badge">Premium</span>
+                    <div style="margin-top: 15px; display: flex; gap: 10px;">
+                        <a href="template-remodeling.html" target="_blank" class="btn-template-preview">Full Preview</a>
+                        <a href="https://buy.stripe.com/dRm9AT9oXfZVfeR7Qq9bO0B" class="btn-template-use">Use Template</a>
+                    </div>
                 </div>
             </div>
             
             <div class="template-card">
-                <div class="template-preview">TEMPLATE PREVIEW</div>
+                <div class="template-preview-iframe">
+                    <iframe src="template-roofing-embed.html" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
                 <div class="template-info">
-                    <h3>The Specialist</h3>
+                    <h3>The Specialist - Roofing</h3>
                     <p>Clean layout for roofers, HVAC, plumbers, and electricians</p>
                     <span class="template-badge">New</span>
+                    <div style="margin-top: 15px; display: flex; gap: 10px;">
+                        <a href="template-roofing.html" target="_blank" class="btn-template-preview">Full Preview</a>
+                        <a href="https://buy.stripe.com/dRm9AT9oXfZVfeR7Qq9bO0B" class="btn-template-use">Use Template</a>
+                    </div>
                 </div>
             </div>
         </div>
